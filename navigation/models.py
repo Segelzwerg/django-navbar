@@ -25,7 +25,7 @@ class Navigation(models.Model):
 
     @property
     def get_children(self):
-        return NavigationDropDown.objects.filter(parent=self)
+        return NavigationDropDown.objects.filter(parent=self).order_by("order")
 
 
 class NavigationDropDown(models.Model):
