@@ -24,4 +24,4 @@ class NavigationDropDownAdmin(admin.ModelAdmin):
 class NavigationLogoAdmin(admin.ModelAdmin):
     """Admin of the navigation logo."""
 
-    list_display = ["name", "url", "src", "alt_text"]
+    list_display = ["name", "url", "image", "alt_text"]

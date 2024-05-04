@@ -75,12 +75,12 @@ class NavigationLogo(models.Model):
     """
     Logo in the navigation bar.
     :param name: name of the logo
-    :param src: url to the image
+    :param image: the uploaded image
     :param url: target url if clicked
     :param alt_text: alternative text if image cannot be displayed
     """
 
     name = models.CharField(max_length=50, default="")
     url = models.CharField(max_length=50, default="")
-    src = models.CharField(max_length=50, default="")
+    image = models.ImageField(upload_to="navigation/logos")
     alt_text = models.CharField(max_length=50, default="")
