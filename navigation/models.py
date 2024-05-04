@@ -2,6 +2,7 @@ from django.db import models
 
 
 class NavigationType(models.TextChoices):
+    NAV_LOGO = "nav-logo"
     NAV_ITEM = "nav-item"
     NAV_ITEM_DROP = "nav-item dropdown"
     DROP_DOWN_ITEM = "dropdown-item"
@@ -45,3 +46,18 @@ class NavigationDropDown(models.Model):
                 fields=["parent", "order"], name="dropdown_order_unique"
             )
         ]
+
+
+class NavLogo(models.Model):
+    """
+    Logo in the navigation bar.
+    :param name: name of the logo
+    :param src: url to the image
+    :param url: target url if clicked
+    :param alt_text: alternative text if image cannot be displayed
+    """
+
+    name = models.CharField(max_length=50, default="")
+    url = models.CharField(max_length=50, default="")
+    src = models.CharField(max_length=50, default="")
+    alt_text = models.CharField(max_length=50, default="")
