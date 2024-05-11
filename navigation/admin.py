@@ -1,8 +1,9 @@
 """Admin configuration of navigation."""
 
 from django.contrib import admin
-from navigation.models import Navigation, NavigationDropDown, NavigationLogo
 from modeltranslation.admin import TranslationAdmin
+
+from navigation.models import Navigation, NavigationDropDown, NavigationLogo
 
 
 @admin.register(Navigation)
