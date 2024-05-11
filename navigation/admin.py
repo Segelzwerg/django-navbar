@@ -2,10 +2,11 @@
 
 from django.contrib import admin
 from navigation.models import Navigation, NavigationDropDown, NavigationLogo
+from modeltranslation.admin import TranslationAdmin
 
 
 @admin.register(Navigation)
-class NavigationAdmin(admin.ModelAdmin):
+class NavigationAdmin(TranslationAdmin):
     """Admin of the navigation item."""
 
     list_display = ("name", "url", "type", "order")
