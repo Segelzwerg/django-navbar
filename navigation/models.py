@@ -1,6 +1,7 @@
 """Models for the navigation app."""
 
 from django.db import models
+from django.utils.translation import gettext_lazy as _
 
 
 # pylint: disable=too-many-ancestors
@@ -23,17 +24,22 @@ class Navigation(models.Model):
     :param order: The order how it will be displaced 0 being the first.
     """
 
-    name = models.CharField(max_length=50, default="")
+    name = models.CharField(_("name"), max_length=50, default="")
     url = models.CharField(max_length=50, default="")
     type = models.CharField(
-        max_length=50, choices=NavigationType.choices, default=NavigationType.NAV_ITEM
+        _("type"),
+        max_length=50,
+        choices=NavigationType.choices,
+        default=NavigationType.NAV_ITEM,
     )
-    order = models.IntegerField(default=0)
+    order = models.IntegerField(_("order"), default=0)
 
     def __str__(self) -> str:
         return self.name
 
     class Meta:
+        verbose_name = _("Navigation")
+        verbose_name_plural = _("Navigations")
         constraints = [
             models.UniqueConstraint(fields=["order"], name="navigation_order_unique")
         ]
