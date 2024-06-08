@@ -31,5 +31,5 @@ jobs:
         uses: tj-actions/bandit@v5
         with:
           targets: |
-            navigation
+            django_navbar
           options: "-r -c pyproject.toml"
