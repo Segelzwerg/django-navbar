@@ -35,9 +35,12 @@ class Navigation(models.Model):
     order = models.IntegerField(_("order"), default=0)
 
     def __str__(self) -> str:
-        return self.name
+        return str(self.name)
 
+    # pylint: disable=too-few-public-methods
     class Meta:
+        """Meta configuration of the Navigation class."""
+
         verbose_name = _("Navigation")
         verbose_name_plural = _("Navigations")
         constraints = [
@@ -47,7 +50,7 @@ class Navigation(models.Model):
     @property
     def get_children(self):
         """Retrieves the dropdown childrens."""
-        return NavigationDropDown.objects.filter(parent=self).order_by("order")
+        return NavigationDropDown.objects.filter(parent=self).order_by("order") # pylint: disable=no-member
 
 
 class NavigationDropDown(models.Model):
@@ -69,7 +72,9 @@ class NavigationDropDown(models.Model):
         Navigation, on_delete=models.CASCADE, related_name="DropDownRelation"
     )
 
+    # pylint: disable=too-few-public-methods
     class Meta:
+        """Meta configuration of the Drop Down Menu."""
         constraints = [
             models.UniqueConstraint(
                 fields=["parent", "order"], name="dropdown_order_unique"
