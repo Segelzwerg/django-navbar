@@ -47,10 +47,11 @@ class Navigation(models.Model):
             models.UniqueConstraint(fields=["order"], name="navigation_order_unique")
         ]
 
+    # pylint: disable=no-member
     @property
     def get_children(self):
         """Retrieves the dropdown childrens."""
-        return NavigationDropDown.objects.filter(parent=self).order_by("order") # pylint: disable=no-member
+        return NavigationDropDown.objects.filter(parent=self).order_by("order")
 
 
 class NavigationDropDown(models.Model):
@@ -75,6 +76,7 @@ class NavigationDropDown(models.Model):
     # pylint: disable=too-few-public-methods
     class Meta:
         """Meta configuration of the Drop Down Menu."""
+
         constraints = [
             models.UniqueConstraint(
                 fields=["parent", "order"], name="dropdown_order_unique"
