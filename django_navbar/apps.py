@@ -9,4 +9,4 @@ class NavigationConfig(AppConfig):
     """
 
     default_auto_field = "django.db.models.BigAutoField"
-    name = "navigation"
+    name = "django_navbar"
