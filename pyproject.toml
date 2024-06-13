@@ -17,7 +17,7 @@ pylint = "^3.2.3"
 coverage = "^7.5.3"
 flake8 = "^7.0.0"
 pylint-django = "^2.5.5"
-bandit = "^1.7.8"
+bandit = "^1.7.9"
 pre-commit = "^3.7.1"
 
 [build-system]
