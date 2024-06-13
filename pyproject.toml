@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-navbar"
-version = "0.1.0"
+version = "0.0.1"
 description = "Provides a navigation bar for django applications."
 authors = ["Segelzwerg <25705862+Segelzwerg@users.noreply.github.com>"]
 license = "MIT"
