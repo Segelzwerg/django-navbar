@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('navigation', '0002_navigation_name_navigation_order_navigation_type_and_more'),
+        ('django_navbar', '0002_navigation_name_navigation_order_navigation_type_and_more'),
     ]
 
     operations = [
