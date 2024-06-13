@@ -3,6 +3,7 @@
 from django_navbar.models import Navigation, NavigationLogo
 
 
+# pylint: disable=no-member
 def nav_bar(_):
     """
     Provides the navigation bar for all templates.
