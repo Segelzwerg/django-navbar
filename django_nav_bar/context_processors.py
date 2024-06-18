@@ -1,6 +1,6 @@
 """Global context provisioner."""
 
-from django_navbar.models import Navigation, NavigationLogo
+from django_nav_bar.models import Navigation, NavigationLogo
 
 
 # pylint: disable=no-member
