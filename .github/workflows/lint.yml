@@ -16,10 +16,10 @@ jobs:
           python-version: 3.12
 
       - name: Lint sources with flake8
-        run: poetry run flake8 django_navbar tests --count --show-source --statistics
+        run: poetry run flake8 django_nav_bar tests --count --show-source --statistics
 
       - name: Lint sources with pylint
-        run: poetry run pylint django_navbar
+        run: poetry run pylint django_nav_bar
 
   security:
     runs-on: ubuntu-latest
@@ -31,5 +31,5 @@ jobs:
         uses: tj-actions/bandit@v5
         with:
           targets: |
-            django_navbar
+            django_nav_bar
           options: "-r -c pyproject.toml"
