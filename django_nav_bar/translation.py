@@ -2,7 +2,7 @@
 
 from modeltranslation.translator import register, TranslationOptions
 
-from django_navbar.models import Navigation, NavigationDropDown, NavigationLogo
+from django_nav_bar.models import Navigation, NavigationDropDown, NavigationLogo
 
 
 @register(Navigation)

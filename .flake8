@@ -1,6 +1,5 @@
 [flake8]
 exclude =
-    lh_django/settings.py
     **/migrations/
 
 max-line-length = 100

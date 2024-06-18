@@ -15,5 +15,3 @@ repos:
     - id: trailing-whitespace
 default_language_version:
   python: python3.12
-
-d

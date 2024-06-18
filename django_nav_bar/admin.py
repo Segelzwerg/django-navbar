@@ -3,7 +3,7 @@
 from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin
 
-from django_navbar.models import Navigation, NavigationDropDown, NavigationLogo
+from django_nav_bar.models import Navigation, NavigationDropDown, NavigationLogo
 
 
 @admin.register(Navigation)
