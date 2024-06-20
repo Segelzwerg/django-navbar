@@ -260,13 +260,13 @@ libsass = ">=0.7.0,<1"
 
 [[package]]
 name = "django-modeltranslation"
-version = "0.19.3"
+version = "0.19.4"
 description = "Translates Django models using a registration approach."
 optional = false
 python-versions = "*"
 files = [
-    {file = "django_modeltranslation-0.19.3-py3-none-any.whl", hash = "sha256:0c8aa2eedf44f1c7c4d4eb99ede8993e152f14b00edcb3de32d43c895aa5c016"},
-    {file = "django_modeltranslation-0.19.3.tar.gz", hash = "sha256:0670cb1b09cbd8069f2829d95e5eabfe17d62b5eaed0a34011f5554d04f5d5e8"},
+    {file = "django_modeltranslation-0.19.4-py3-none-any.whl", hash = "sha256:89974574390662ea63edd996c71c5740478fa2173630468af6e024703bf88606"},
+    {file = "django_modeltranslation-0.19.4.tar.gz", hash = "sha256:8afab046e8d3f5bad1f25819426225430f4bfc3688127e56522f605d7d803f01"},
 ]
 
 [package.dependencies]
@@ -859,4 +859,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "94ebbcb3eaf0985244b58c3b672352c71dba0e62c246058ca09393b9fbcab36f"
+content-hash = "2d3691fd5bed3398c9fdf94f509160242856cb1b33f457929af35717ef25317e"
