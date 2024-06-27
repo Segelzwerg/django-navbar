@@ -59,7 +59,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='navigationdropdown',
             name='parent',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='DropDownRelation', to='navigation.navigation'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='DropDownRelation', to='django_navbar.navigation'),
         ),
         migrations.AddConstraint(
             model_name='navigationdropdown',
