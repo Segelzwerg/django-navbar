@@ -16,10 +16,10 @@ jobs:
           python-version: 3.12
 
       - name: Lint sources with flake8
-        run: poetry run flake8 django_nav_bar tests --count --show-source --statistics
+        run: poetry run flake8 django_navbar tests --count --show-source --statistics
 
       - name: Lint sources with pylint
-        run: poetry run pylint django_nav_bar
+        run: poetry run pylint django_navbar
 
   security:
     runs-on: ubuntu-latest
