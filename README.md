@@ -14,4 +14,16 @@ INSTALLED_APPS = [
   "django_navbar",
   ...
 ]
+TEMPLATES = [
+    {
+        ...
+        "OPTIONS": {
+            "context_processors": [
+                ...
+                "django_navbar.context_processors.nav_bar",
+                ...
+            ],
+        },
+    },
+]
 ```
