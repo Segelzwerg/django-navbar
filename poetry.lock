@@ -228,13 +228,13 @@ rjsmin = "1.2.2"
 
 [[package]]
 name = "django-dynamic-theme"
-version = "0.0.8"
+version = "0.0.10"
 description = "This enables the administrator of a django website to change the theme on the fly."
 optional = false
 python-versions = "<4.0,>=3.10"
 files = [
-    {file = "django_dynamic_theme-0.0.8-py3-none-any.whl", hash = "sha256:083d05a128a506b8025b97a627004df794408c783075e7ce1eaf358eefb5a8ec"},
-    {file = "django_dynamic_theme-0.0.8.tar.gz", hash = "sha256:17f845304263f7edc37d45ea24dfd1531b1938f7c177dabd18f40ecfbf44c409"},
+    {file = "django_dynamic_theme-0.0.10-py3-none-any.whl", hash = "sha256:30e1cddf66b53f098e4e2c2cae9e3b23d35c0a6929b2bd863ad5029595aff161"},
+    {file = "django_dynamic_theme-0.0.10.tar.gz", hash = "sha256:bd6bdf854ab9877af6764290252b3a5c01400366140ec68c61c7b8a9dd7da78b"},
 ]
 
 [package.dependencies]
@@ -242,7 +242,6 @@ django = ">=5.0,<6.0"
 django-colorfield = ">=0.11.0,<0.12.0"
 django-compressor = ">=4.4,<5.0"
 django-libsass = ">=0.9,<0.10"
-setuptools = ">=69.2.0,<70.0.0"
 
 [[package]]
 name = "django-libsass"
@@ -830,22 +829,6 @@ files = [
 ]
 
 [[package]]
-name = "setuptools"
-version = "69.5.1"
-description = "Easily download, build, install, upgrade, and uninstall Python packages"
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "setuptools-69.5.1-py3-none-any.whl", hash = "sha256:c636ac361bc47580504644275c9ad802c50415c7522212252c033bd15f301f32"},
-    {file = "setuptools-69.5.1.tar.gz", hash = "sha256:6c1fccdac05a97e598fb0ae3bbed5904ccb317337a51139dcd51453611bbb987"},
-]
-
-[package.extras]
-docs = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "pygments-github-lexers (==0.0.5)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-favicon", "sphinx-inline-tabs", "sphinx-lint", "sphinx-notfound-page (>=1,<2)", "sphinx-reredirects", "sphinxcontrib-towncrier"]
-testing = ["build[virtualenv]", "filelock (>=3.4.0)", "importlib-metadata", "ini2toml[lite] (>=0.9)", "jaraco.develop (>=7.21)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "mypy (==1.9)", "packaging (>=23.2)", "pip (>=19.1)", "pytest (>=6,!=8.1.1)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-home (>=0.5)", "pytest-mypy", "pytest-perf", "pytest-ruff (>=0.2.1)", "pytest-timeout", "pytest-xdist (>=3)", "tomli", "tomli-w (>=1.0.0)", "virtualenv (>=13.0.0)", "wheel"]
-testing-integration = ["build[virtualenv] (>=1.0.3)", "filelock (>=3.4.0)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "packaging (>=23.2)", "pytest", "pytest-enabler", "pytest-xdist", "tomli", "virtualenv (>=13.0.0)", "wheel"]
-
-[[package]]
 name = "sqlparse"
 version = "0.5.1"
 description = "A non-validating SQL parser."
@@ -919,4 +902,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "c99f8fc27e1699d5a5add695d0a9d6bc4b4a6f1233aa857809f2fd1bae04a0fe"
+content-hash = "85c88766e61af4b96e67ef430e9c8d2f5d5f0530f3ceecfc38ac5ee9de1db1dd"
