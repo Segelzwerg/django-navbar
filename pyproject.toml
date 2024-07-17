@@ -12,7 +12,7 @@ packages = [{ include = "django_navbar" },]
 [tool.poetry.dependencies]
 python = "^3.12"
 Django = "^5.0.6"
-django-dynamic-theme = "^0.0.8"
+django-dynamic-theme = "^0.0.10"
 django-modeltranslation = "^0.19.4"
 
 [tool.poetry.group.dev.dependencies]
