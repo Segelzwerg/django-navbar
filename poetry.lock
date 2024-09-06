@@ -280,13 +280,13 @@ libsass = ">=0.7.0,<1"
 
 [[package]]
 name = "django-modeltranslation"
-version = "0.19.8"
+version = "0.19.9"
 description = "Translates Django models using a registration approach."
 optional = false
 python-versions = "*"
 files = [
-    {file = "django_modeltranslation-0.19.8-py3-none-any.whl", hash = "sha256:f0e407e1e85938c69c3e27f705ed7b05a1e31f8058d9f71261d6e75f476f7e1f"},
-    {file = "django_modeltranslation-0.19.8.tar.gz", hash = "sha256:04b0f0319ec73dad8e54fde4368483ce1430ccd5dcf118a7138a26b6b7f17588"},
+    {file = "django_modeltranslation-0.19.9-py3-none-any.whl", hash = "sha256:3474e61488201b7babdc575c1774f653574d09e410a8c96c5c6a8a84716f1dd6"},
+    {file = "django_modeltranslation-0.19.9.tar.gz", hash = "sha256:78f1bf32b0fb04e5970b988bd7cd17fe2bdfaae69012048c338af4610a7807db"},
 ]
 
 [package.dependencies]
