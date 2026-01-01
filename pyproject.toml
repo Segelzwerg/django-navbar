@@ -16,7 +16,7 @@ django-dynamic-theme = "^0.0.10"
 django-modeltranslation = "^0.19.4"
 
 [tool.poetry.group.dev.dependencies]
-pylint = "^3.2.3"
+pylint = ">=3.2.3,<5.0.0"
 coverage = "^7.5.4"
 flake8 = "^7.1.0"
 pylint-django = "^2.5.5"
